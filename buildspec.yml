@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Building Backend..."
+      - cd backend  # Navigate to the backend folder
+      - npm install
+      - npm run build  # Or whatever build command you use for your backend
+artifacts:
+  files:
+    - backend/**/*  # Include everything from the backend folder
+    - docker-compose.yml  # Include the docker-compose file if needed
