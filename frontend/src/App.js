@@ -7,7 +7,7 @@ function App() {
 
   const fetchVideos = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/videos');
+      const res = await axios.get('http://backend:5000/videos');
       setVideos(res.data);
     } catch (err) {
       console.error('Error fetching videos:', err);
