@@ -7,7 +7,7 @@ function App() {
 
   const fetchVideos = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/videos');
+      const res = await axios.get('http://backend-env.eba-7pzzsjis.ap-south-1.elasticbeanstalk.com/videos');
       setVideos(res.data);
     } catch (err) {
       console.error('Error fetching videos:', err);
